@@ -8,7 +8,7 @@ WWC015_vcfstats <- read.table("vcf", sep=':', strip.white = TRUE, fill = TRUE)
 head(WWC015_vcfstats)
 WWC015_vcfstats_group <- WWC015_vcfstats %>% mutate(group = cumsum(V1 =="File"))
 head(WWC015_vcfstats_group)
-write.csv(WWC015_vcfstats_group, "WWC105_vcfstats_group.txt")
+write.csv(WWC105_vcfstats_group, "WWC105_vcfstats_group.txt")
 
 #####python code##########
 
